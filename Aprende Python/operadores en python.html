@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodingDude">
+    <link rel="shortcut icon" href="python.png">
+    <link rel="stylesheet" href="operadores en python.css">
+    <title>OPERADORES</title>
+</head>
+
+<body>
+    <h1>OPERADORES</h1>
+
+    <p>
+        Los operadores en Python son símbolos que realizan acciones y operaciones sobre valores y variables.
+        Existen operadores aritméticos, operadores de asignación, operadores de comparación, operadores lógicos,
+        operadores de membresía, operadores de identidad y operadores "bit a bit".
+    </p>
+    
+    <br>
+    
+    <h2>OPERADORES ARITMÉTICOS</h2>
+    <p><b>Suma (+)</b>: Adiciona dos números.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> + <span id="num">2</span><span
+            id="parentesis">)</span>
+        Resultado: 5.
+    </p>
+
+    <br>
+
+    <p><b>Resta (-)</b>: Resta el segundo número del primero.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> - <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 1.
+    </p>
+
+    <br>
+
+    <p><b>Multiplicación (*)</b>: Multiplica dos números.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> * <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 6.
+    </p>
+
+    <br>
+
+    <p><b>División (/)</b>: Divide el primer número por el segundo. Devuelve un número de punto flotante.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">6</span> / <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 3.0.
+    </p>
+
+    <br>
+
+    <p><b>Módulo (%)</b>: Devuelve el resto de la división del primer número por el segundo.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">7</span> % <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 1.
+    </p>
+
+    <br>
+
+    <p><b>Potenciación (**)</b>: Eleva el primer número a la potencia del segundo.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> ** <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 9.
+    </p>
+
+    <br>
+
+    <p><b>División entera (//)</b>: Divide el primer número por el segundo y devuelve el cociente entero.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">7</span> // <span id="num">2</span><span id="parentesis">)</span>
+        Resultado: 3.
+    </p>
+
+    <br>
+
+    <p>
+        Estos operadores sirven para operar con números enteros y de punto flotante. También existe el operador de 
+        raiz cuadrada (<span id="sqrt">sqrt</span><span id="parentesis">()</span>), en el que se encuentra la raiz cuadrada del número entre paréntesis, 
+        pero solo es utilizable cuando se importa el módulo "<span id="modulo">math</span>", pero eso lo veremos más 
+        adelante.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES DE ASIGNACIÓN</h2>
+    <p><b>Asignación simple (=)</b>: Asigna el valor de la derecha a la variable de la izquierda.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+
+    <br>
+
+    <p><b>Suma y asignación (+=)</b>: Suma el valor de la derecha al valor actual de la variable y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> += <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> + <span id="num">3</span></p>
+
+    <br>
+
+    <p><b>Resta y asignación (-=)</b>: Resta el valor de la derecha al valor actual de la variable y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> -= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> - <span id="num">3</span></p>
+
+    <br>
+
+    <p><b>Multiplicación y asignación (*=)</b>: Multiplica el valor actual de la variable por el valor de la derecha y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> *= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> * <span id="num">3</span></p>
+
+    <br>
+
+    <p><b>División y asignación (/=)</b>: Divide el valor actual de la variable por el valor de la derecha y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> /= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> / <span id="num">3</span></p>
+
+    <br>
+
+    <p><b>Módulo y asignación (%=)</b>: Calcula el módulo del valor actual de la variable con el valor de la derecha y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> %= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> % <span id="num">3</span></p>
+
+    <br>
+
+    <p><b>Potenciación y asignación (**)</b>: Eleva el valor actual de la variable a la potencia del valor de la derecha y luego asigna el resultado a la variable.</p>
+    <p><span id="var">x</span> **= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> ** <span id="num">3</span></p>
+
+    <br>
+    
+    <p>
+        <b>División entera y asignación (//)</b>: Realiza una división entera del valor actual de la variable por el valor 
+        de la derecha y luego asigna el resultado a la variable.
+    </p>
+    <p><span id="var">x</span> //= <span id="num">3</span></p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> // <span id="num">3</span></p>
+
+    <br>
+
+    <p>
+        <b>&=</b>: Es un operador de asignación bit a bit. Realiza una operación AND bit a bit en los operandos y asigna el 
+        resultado a la variable de la izquierda.
+    </p>
+    <p><span id="var">x</span> = <span id="num">5</span> En binario es 101</p>
+    <p><span id="var">x</span> &= <span id="num">3</span> Realiza AND bit a bit: 101 & 011 = 001</p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> & <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span><span id="parentesis">)</span> 
+        X ahora es 1.
+    </p>
+    <p>
+        Esto es útil cuando necesitas manipular bits directamente, como en programación de bajo nivel, manipulación 
+        de datos binarios, o configuraciones de hardware.
+    </p>
+
+    <br>
+
+    <p>
+        <b>|=</b>: es un operador de asignación bit a bit, similar al "&=" pero realiza una operación OR bit a bit entre los 
+        operandos y asigna el resultado a la variable de la izquierda.
+    </p>
+    <p><span id="var">x</span> = <span id="num">5</span> En binario es 101</p>
+    <p><span id="var">x</span> |= <span id="num">3</span> Realiza OR bit a bit: 101 | 011 = 111</p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> | <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span><span id="parentesis">)</span> 
+        X ahora es 7.
+    </p>
+    <p>
+        Este operador es útil en tareas que implican manipulación de bits y se encuentra con frecuencia en 
+        programación de bajo nivel y configuraciones de hardware. También puede ser utilizado en casos donde 
+        necesites combinar máscaras de bits para establecer múltiples opciones a la vez.
+    </p>
+
+    <br>
+
+    <p>
+        <b>^=</b>: es otro operador de asignación bit a bit. Realiza una operación XOR bit a bit entre los operandos y asigna 
+        el resultado a la variable de la izquierda.
+    </p>
+    <p><span id="var">x</span> = <span id="num">5</span> En binario es <span id="num">101</span></p>
+    <p><span id="var">y</span> = <span id="num">3</span> En binario es <span id="num">011</span></p>
+    <p><span id="var">x</span> ^= <span id="var">y</span> Realiza XOR bit a bit: 101 ^ 011 = 110</p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> ^ <span id="var">y</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span><span id="parentesis">)</span> 
+        X ahora es 6.
+    </p>
+    <p>
+        Este operador es particularmente útil en criptografía y algoritmos que requieren la manipulación de bits para 
+        alternar estados o enmascarar datos.
+    </p>
+
+    <br>
+
+    <p>
+        <b>>>=</b>: es otro operador de asignación bit a bit. Realiza una operación de desplazamiento a la derecha en bits y 
+        luego asigna el resultado a la variable de la izquierda.
+    </p>
+    <p><span id="var">x</span> = <span id="num">8</span> En binario es <span id="num">1000</span></p>
+    <p>
+        <span id="var">x</span> >>= <span id="num">2</span> Desplaza los bits de x dos posiciones a la derecha: 
+        1000 >> 2 = 0010
+    </p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> >> <span id="var">2</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span><span id="parentesis">)</span> 
+        X ahora es 2.
+    </p>
+    <p>
+        Este operador es útil en tareas que requieren manipulación de bits y es común en aplicaciones de bajo nivel, 
+        como el procesamiento de señales, gráficos, y en algoritmos que manejan datos binarios.
+    </p>
+
+    <br>
+
+    <p>
+        <b><<=</b>: es otro operador de asignación bit a bit. Realiza una operación de desplazamiento a la izquierda en bits 
+        y luego asigna el resultado a la variable de la izquierda.
+    </p>
+    <p><span id="var">x</span> = <span id="num">3</span> En binario es <span id="num">0011</span></p>
+    <p>
+        <span id="var">x</span> <<= <span id="num">2</span> Desplaza los bits de <span id="var">x</span> dos 
+        posiciones a la izquierda: 0011 << 2 = 1100
+    </p>
+    <p>Es lo mismo que: <span id="var">x</span> = <span id="var">x</span> << <span id="var">2</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span><span id="parentesis">)</span> 
+        X ahora es 12.
+    </p>
+    <p>
+        Este operador es muy útil en la manipulación de bits y se utiliza comúnmente en tareas de procesamiento de 
+        señales, gráficos, y algoritmos que manejan datos binarios.
+    </p>
+
+    <br>
+
+    <p>
+        <b>:=</b>:, también conocido como el operador de walrus (morsa, por su similitud a los colmillos de dicho animal), se 
+        introdujo en <a href="https://www.python.org/downloads/release/python-380/">Python 3.8</a>. Permite asignar 
+        valores a variables como parte de una expresión, lo que puede hacer tu código más compacto y legible.
+    </p>
+    <p>
+        <span id="var">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, 
+        <span id="num">3</span>, <span id="num">4</span>, <span id="num">5</span>, <span id="num">6</span><span id="parentesis">]</span>
+    </p>
+    <p>Normalmente: </p>
+    <p>
+        <span id="var">val</span> = <span id="metodo">len</span><span id="parentesis">(</span><span id="var">lista</span><span id="parentesis">)</span>
+    </p>
+    <p><span id="if">if</span> <span id="var">val</span> > <span id="num">5</span>:</p>
+    <p class="sangria">
+        <span id="print">print</span><span id="parentesis">(</span><span id="txt">f"La lista es bastante grande, tiene 
+        {val} elementos"</span><span id="parentesis">)</span>
+    </p>
+    <p>
+        Usa una cadena "f", para más información sobre las mismas, visita: <a href="tipos de datos en python.html">Tipos 
+        de dátos en Python</a>, en el apartado de "Cadenas de texto".
+    </p>
+    <p>Con el operador walrus:</p>
+    <p>
+        <span id="if">if</span> <span id="parentesis">(</span><span id="var">val</span> := <span id="metodo">len</span><span id="parentesis">(</span><span id="var">lista</span><span id="parentesis">)</span><span id="parentesis">)</span> 
+        > <span id="num">5</span>:
+    </p>
+    <p class="sangria">
+        <span id="print">print</span><span id="parentesis">(</span><span id="txt">f"La lista es bastante grande, tiene 
+        {val} elementos"</span><span id="parentesis">)</span>
+    </p>
+    <p>
+        En este caso, el operador := asigna <span id="metodo">len</span><span id="parentesis">(</span><span id="var">lista</span><span id="parentesis">)</span> 
+        a <span id="var">val</span> y luego verifica si <span id="var">val</span> es mayor que <span id="num">5</span> 
+        en una sola línea de código.
+    </p>
+    <p>
+        El uso del operador walrus puede ser especialmente útil en bucles y comprensiones de listas para evitar 
+        recalcular valores.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES DE COMPARACIÓN</h2>
+
+    <p><b>Igual a (==)</b>: Compara dos valores para verificar si son iguales.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">5</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span> == <span id="var">y</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">x</span>(<span id="num">5</span>) = 
+        <span id="var">y</span>(<span id="num">5</span>)
+    </p>
+    <p>
+        Es importante no confundir el "=", que sirve para asignarle un valor a una variable, con el "==", que es el 
+        operador de comparación.
+    </p>
+
+    <br>
+
+    <p><b>Distinto de (!=)</b>: Comprueba si dos valores son diferentes.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span> != <span id="var">y</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">x</span>(<span id="num">5</span>) ≠ 
+        <span id="var">y</span>(<span id="num">3</span>)
+    </p>
+
+    <br>
+
+    <p><b>Mayor que (>)</b>: Verifica si el valor de la izquierda es mayor que el de la derecha.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span> > <span id="var">y</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">x</span>(<span id="num">5</span>) > 
+        <span id="var">y</span>(<span id="num">3</span>)
+    </p>
+
+    <br>
+
+    <p><b>Menor que (<)</b>: Verifica si el valor de la izquierda es menor que el de la derecha.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">y</span> < <span id="var">x</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">y</span>(<span id="num">3</span>) < 
+        <span id="var">x</span>(<span id="num">5</span>)
+    </p>
+
+    <br>
+
+    <p><b>Mayor o igual que (>=)</b>: Verifica si el valor de la izquierda es mayor o igual al de la derecha.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">5</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">y</span> >= <span id="var">x</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">x</span>(<span id="num">5</span>) ≥ 
+        <span id="var">y</span>(<span id="num">5</span>)
+    </p>
+
+    <br>
+    
+    <p><b>Menor o igual que (<)</b>: Verifica si el valor de la izquierda es menor o igual al de la derecha.</p>
+    <p><span id="var">x</span> = <span id="num">5</span></p>
+    <p><span id="var">y</span> = <span id="num">3</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">y</span> <= <span id="var">x</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, puesto que, <span id="var">y</span>(<span id="num">5</span>) ≤ 
+        <span id="var">y</span>(<span id="num">3</span>)
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES LÓGICOS</h2>
+
+    <p>
+        Los operadores lógicos en Python se utilizan para combinar expresiones booleanas, es decir, aquellas que 
+        resultan en valores <span id="bool">True</span> o <span id="bool">False</span>.
+    </p>
+
+    <br>
+
+    <p>
+        <b><span id="log-oper">and</span></b>: Devuelve <span id="bool">True</span> si ambas condiciones son verdaderas.
+    </p>
+    <p><span id="var">a</span> = <span id="num">3</span></p>
+    <p><span id="var">b</span> = <span id="num">3</span></p>
+    <p><span id="var">c</span> = <span id="num">5</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> == <span id="var">b</span> 
+        <span id="log-oper">and</span> <span id="var">b</span> == <span id="var">c</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">False</span>, porque, aunque <span id="var">a</span>(<span id="num">3</span>) = 
+        <span id="var">b</span>(<span id="num">3</span>), <span id="var">c</span> ≠ <span id="num">3</span>.
+    </p>
+
+    <br>
+
+    <p>
+        <b><span id="log-oper">or</span></b>: Devuelve <span id="bool">True</span> si al menos una de las condiciones es 
+        verdadera.
+    </p>
+    <p><span id="var">a</span> = <span id="num">3</span></p>
+    <p><span id="var">b</span> = <span id="num">3</span></p>
+    <p><span id="var">c</span> = <span id="num">5</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> == <span id="var">b</span> 
+        <span id="log-oper">or</span> <span id="var">b</span> == <span id="var">c</span><span id="parentesis">)</span> 
+        Imprime <span id="bool">True</span>, porque <span id="var">a</span> = <span id="var">b</span>. No importa que 
+        <span id="var">b</span> sea diferente de <span id="var">c</span>.
+    </p>
+
+    <br>
+
+    <p><b><span id="log-oper">not</span></b>: Invierte el valor de verdad de una condición.</p>
+    <p><span id="var">a</span> = <span id="bool">True</span></p>
+    <p>
+        <span id="print">print<span id="parentesis">(</span><span id="log-oper">not</span> <span id="var">a</span><span id="parentesis">)</span></span>
+        Imprime <span id="bool">False</span>, porque es el inverso de <span id="bool">True</span>
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES DE MEMBRESÍA</h2>
+
+    <p>
+        Los operadores de membresía en Python se utilizan para verificar si un elemento se encuentra dentro de una 
+        secuencia, como una lista, tupla, cadena, etc. Hay dos operadores de membresía:
+    </p>
+
+    <br>
+
+    <p>
+        <b><span id="memb-oper">in</span></b>: Devuelve <span id="bool">True</span> si el valor especificado 
+        está presente en la secuencia.
+    </p>
+    <p>
+        <span id="lista">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, <span id="num">3</span>, 
+        <span id="num">4</span>, <span id="num">5</span>, <span id="num">6</span><span id="parentesis">]</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> <span id="memb-oper">in</span> 
+        <span id="var">lista</span><span id="parentesis">)</span>: Resultado: <span id="bool">True</span>; el número 
+        <span id="num">3</span> es un elemento de la lista.
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">10</span> <span id="memb-oper">in</span> 
+        <span id="var">lista</span><span id="parentesis">)</span>: Resultado: <span id="bool">False</span>; el número 
+        <span id="num">10</span> no es un elemento de la lista.
+    </p>
+
+    <br>
+
+    <p>
+        <b><span id="memb-oper">not in</span></b>: Devuelve <span id="bool">True</span> si el valor especificado no está 
+        presente en la secuencia.
+    </p>
+    <p>
+        <span id="lista">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, <span id="num">3</span>, 
+        <span id="num">4</span>, <span id="num">5</span><span id="parentesis">]</span></p>
+    <p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">6</span> <span id="memb-oper">not in</span> 
+        <span id="var">lista</span><span id="parentesis">)</span>: Resultado: <span id="bool">True</span>; el número 
+        <span id="num">6</span> no es un elemento de la lista.
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="num">3</span> <span id="memb-oper">not in</span> 
+        <span id="var">lista</span><span id="parentesis">)</span>: Resultado: <span id="bool">False</span>; el número 
+        <span id="num">3</span> es un elemento de la lista.
+    </p>
+
+    <br>
+
+    <p>
+        Estos operadores son muy útiles cuando necesitas verificar la presencia o ausencia de un elemento en una 
+        colección de datos, simplificando mucho el código y mejorando la legibilidad.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES DE IDENTIDAD</h2>
+    <p>
+        Los operadores de identidad en Python se utilizan para comparar si dos objetos son realmente el mismo objeto 
+        en memoria, no solo si son iguales en contenido. Existen dos operadores de identidad:
+    </p>
+    <p>
+        <b><span id="id-oper">is</span></b>: Devuelve <span id="bool">True</span> si los dos operandos se refieren al 
+        mismo objeto; devuelve <span id="bool">False</span> en caso de que no se refieran al mismo objeto.
+    </p>
+    <p>
+        <b><span id="id-oper">is not</span></b>: Devuelve <span id="bool">True</span> si los dos operandos no se 
+        refieren al mismo objeto; devuelve <span id="bool">False</span> en caso de que se refieran al mismo objeto.
+    </p>
+    <h3>Ejemplos:</h3>
+    <p>
+        <span id="var">a</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, 
+        <span id="num">3</span><span id="parentesis">]</span>
+    </p>
+    <p>
+    <p><span id="var">b</span> = <span id="var">a</span></p>
+    <p>
+        <span id="var">c</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, 
+        <span id="num">3</span><span id="parentesis">]</span>
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> <span id="id-oper">is</span> 
+        <span id="var">b</span><span id="parentesis">)</span>: <span id="bool">True</span>, porque <span id="var">b</span> 
+        es la misma referencia que <span id="var">a</span>.
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> <span id="id-oper">is</span> 
+        <span id="var">c</span><span id="parentesis">)</span>: <span id="bool">False</span>, porque, a pesar de que 
+        <span id="var">c</span> tenga el mismo contenido, es una lista diferente.
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> <span id="id-oper">is not</span> 
+        <span id="var">c</span><span id="parentesis">)</span>: <span id="bool">True</span>, porque <span id="var">a</span> 
+        y <span id="var">c</span> no son el mismo objeto.
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> == <span id="var">b</span>
+        <span id="parentesis">)</span>: <span id="bool">True</span>, porque <span id="var">a</span> y <span id="var">c</span> 
+        tienen el mismo contenido.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>OPERADORES BIT A BIT</h2>
+    <p>
+        Los operadores bit a bit en Python permiten realizar operaciones directamente sobre los bits de los números 
+        enteros. Son muy útiles en situaciones que requieren manipulación de bits, como en la programación de sistemas 
+        embebidos, algoritmos de criptografía, etc.
+    </p>
+
+    <br>
+
+    <p><b>AND bit a bit (&)</b>: Compara cada bit de dos operandos y devuelve 1 solo si ambos bits son 1.</p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p><span id="var">b</span> = <span id="num">3</span> En binario es 0011</p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">a</span> & <span id="var">b</span> El resultado es 1, en 
+        binario es 0001.
+    </p>
+
+    <br>
+
+    <p><b>OR bit a bit (|)</b>: Compara cada bit de dos operandos y devuelve 1 si al menos uno de los bits es 1.</p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p><span id="var">b</span> = <span id="num">3</span> En binario es 0011</p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">a</span> | <span id="var">b</span> El resultado es 7, en 
+        binario es 0111.
+    </p>
+
+    <br>
+
+    <p><b>XOR bit a bit (^)</b>: Compara cada bit de dos operandos y devuelve 1 si solo uno de los bits es 1.</p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p><span id="var">b</span> = <span id="num">3</span> En binario es 0011</p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">a</span> ^ <span id="var">b</span> El resultado es 6, en 
+        binario es 0110.
+    </p>
+
+    <br>
+
+    <p><b>NOT bit a bit (~)</b>: Invierte todos los bits del operando.</p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p>
+        <span id="var">resultado</span> = ~<span id="var">a</span> El resultado es -6, en binario es 1010 (con dos 
+        complementos).
+    </p>
+
+    <br>
+
+    <p>
+        <b>Desplazamiento a la izquierda (<<)</b>: Desplaza los bits del operando a la izquierda un número específico de 
+        posiciones (multiplica por 2**n).
+    </p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">a</span> << <span id="num">1</span> El resultado es 10, en 
+        binario es 1010
+    </p>
+
+    <br>
+
+    <p>
+        <b>Desplazamiento a la derecha (>>)</b>: Desplaza los bits del operando a la derecha un número específico de 
+        posiciones (divide por 2**n).
+    </p>
+    <p><span id="var">a</span> = <span id="num">5</span> En binario es 0101</p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">a</span> >> <span id="num">1</span> El resultado es 2, en 
+        binario es 0010
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>CONCLUSIÓN</h2>
+    <p>
+        Los operadores en Python son fundamentales para la programación eficiente y efectiva. Abarcan desde la 
+        manipulación básica de datos con operadores aritméticos, hasta la comparación y toma de decisiones con operadores 
+        de comparación y lógicos. Los operadores de membresía y de identidad te permiten trabajar con colecciones de 
+        datos y estructuras complejas de manera intuitiva. Dominar estos operadores te permitirá escribir código más 
+        claro, conciso y potente, adaptado a una amplia variedad de tareas.
+    </p>
+
+    <br>
+
+    <h2>EVALÚA TU APRENDIZAJE:</h2>
+    <p>Para averiguar cuanto aprendiste en la lección, haz click en el siguiente botón:</p>
+    <button id="quiz" onclick="window.location.href='Quizzes/quiz de operadores en python.html'">¡EVALÚA TU APRENDIZAJE!</button><br>
+</body>
+</html>

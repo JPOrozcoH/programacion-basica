@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodingDude">
+    <link rel="shortcut icon" href="python.png">
+    <link rel="stylesheet" href="tipos de datos en python.css">
+    <title>TIPOS DE DATOS</title>
+</head>
+<body>
+    <h1>TIPOS DE DÁTOS</h1>
+    <p>
+        En programación, el tipo de dato es un concepto importante. Las variables pueden almacenar datos de 
+        diferentes tipos, y diferentes tipos pueden hacer diferentes cosas. Python tiene los siguientes tipos de 
+        datos incorporados de forma predeterminada, en estas categorías:
+    </p>
+    <p><b>Texto</b>: <span id="tipo-dato">str</span></p>
+    <p>
+        <b>Numéricos</b>: <span id="tipo-dato">int</span>, <span id="tipo-dato">float</span>, 
+        <span id="tipo-dato">complex</span>
+    </p>
+    <p>
+        <b>Secuenciales</b>: <span id="tipo-dato">list</span>, <span id="tipo-dato">tuple</span>, 
+        <span id="tipo-dato">range</span>
+    </p>
+    <p><b>Mapeadores</b>: <span id="tipo-dato">dict</span></p>
+    <p><b>Arreglos</b>: <span id="tipo-dato">set</span>, <span id="tipo-dato">frozenset</span></p>
+    <p><b>Booleanos</b>: <span id="tipo-dato">bool</span></p>
+    <p>
+        <b>Binarios</b>: <span id="tipo-dato">bytes</span>, <span id="tipo-dato">bytearray</span>, 
+        <span id="tipo-dato">memoryview</span>
+    </p>
+    <p><b>Sin tipo</b>: <span id="tipo-dato">NoneType</span></p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS DE TEXTO</h2>
+    <br>
+    <h3>STR (CADENAS DE TEXTO)</h3>
+    <p>
+        Los datos "Str" en Python se usan para almacenar y manipular texto. Son muy flexibles y permiten realizar 
+        muchas operaciones útiles con cadenas de caracteres.
+    </p>
+    <p>Ejemplo de variables de texto:</p>
+    <p><span id="var">nombre</span> = <span id="txt">"Juan"</span></p>
+    <p><span id="var">saludo</span> = <span id="txt">"¡Hola mundo!"</span></p>
+
+    <br>
+
+    <p>Puedes concatenar cadenas (es decir, unirlas) fácilmente:</p>
+    <p>
+        <span id="var">mensaje</span> = <span id="var">saludo</span> + <span id="txt">" Soy "</span> + 
+        <span id="var">nombre</span>
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">mensaje</span><span id="parentesis">)</span> 
+        Esto imprime: "¡Hola mundo! Soy Juan"
+    </p>
+
+    <br>
+
+    <p>También puedes usar el slicing para obtener partes de la cadena:</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">nombre</span><span id="parentesis">[</span>
+        <span id="num">1</span>:<span id="num">4</span><span id="parentesis">]</span><span id="parentesis">)</span> 
+        Esto imprime: "uan"
+    </p>
+
+    <br>
+
+    <p>
+        Y hay una infinidad de métodos útiles para manipular strings, como cambiar a mayúsculas, buscar subcadenas, 
+        reemplazar caracteres, etc.
+    </p>
+    <p>Por ejemplo:</p>
+    <p><span id="var">texto</span> = <span id="txt">"Hola mundo"</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">texto</span>.
+        <span id="metodo">upper</span><span id="parentesis">(</span><span id="parentesis">)</span><span id="parentesis">)</span> 
+        Esto imprime: "HOLA MUNDO"
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">texto</span>.
+        <span id="metodo">replace</span><span id="parentesis">(</span><span id="txt">"mundo"</span>, 
+        <span id="txt">"Python"</span><span id="parentesis">)</span><span id="parentesis">)</span> 
+        Esto imprime: "Hola Python"
+    </p>
+
+    <br>
+
+    <p>
+        Otra forma de formatear cadenas es usando las cadenas "f", o f-strings (cadenas de formato). Fueron introducidas
+        en <a href="https://www.python.org/downloads/release/python-360/">Python 3.6</a> y permiten incrustar 
+        expresiones dentro de cadenas utilizando llaves "{}".
+    </p>
+    <p>Por ejemplo:</p>
+    <p><span id="var">nombre</span> = <span id="txt">"Juan"</span></p>
+    <p><span id="var">edad</span> = <span id="num">25</span></p>
+    <p><span id="var">mensaje</span> = <span id="txt">f"Hola, {nombre}. Tienes {edad} años."</span></p>
+    <p><span id="print">print</span><span id="parentesis">(</span><span id="var">mensaje</span><span id="parentesis">)</span></p>
+    
+    <br>
+
+    <p>
+        En este ejemplo, <span id="var">nombre</span> y <span id="var">edad</span> son variables, y al usar la cadena 
+        f <span id="txt">f"Hola, {nombre}. Tienes {edad} años."</span>, se reemplazan las expresiones dentro de las 
+        llaves con los valores actuales de esas variables. Al imprimir mensaje, obtendrás: Hola, Juan. Tienes 25 años.
+    </p>
+
+    <p>La flexibilidad de las cadenas te permite trabajar con texto de muchas maneras creativas.</p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS NUMÉRICOS</h2>
+
+    <br>
+
+    <h3>INT (NÚMEROS ENTEROS)</h3>
+    <p>
+        Los datos "Int" en Python son números enteros, ya sean positivos, negativos o cero, y no tienen decimales. 
+        Sirven para para contar cosas, hacer cálculos, y casi cualquier operación numérica.
+    </p>
+    <p>Ejemplo de datos enteras:</p>
+    <p><span id="var">x</span> = <span id="num">10</span></p>
+    <p><span id="var">y</span> = <span id="num">-5</span></p>
+    <p><span id="var">z</span> = <span id="num">0</span></p>
+
+    <br>
+
+    <p>
+        Python automáticamente detecta que estos datos son de tipo "int" cuando las asignas. Puedes hacer 
+        operaciones aritméticas con ellas:
+    </p>
+    <p>
+        <span id="var">resultado</span> = <span id="var">x</span> + <span id="var">y</span> - <span id="var">z</span> 
+        = <span id="num">5</span>
+    </p>
+
+    <br>
+
+    <h3>FLOAT (NÚMEROS DECIMALES)</h3>
+    <p>
+        Los datos "Float" representan números decimales. Son ideales 
+        cuando necesitas precisión con números decimales, como en cálculos científicos, financieros, o cualquier 
+        situación donde los decimales son cruciales.
+    </p>
+    <p>Ejemplo de datos de punto flotante:</p>
+    <p><span id="var">a</span> = <span id="num">3.14</span></p>
+    <p><span id="var">b</span> = <span id="num">-2.718</span></p>
+    <p><span id="var">c</span> = <span id="num">0.0</span></p>
+
+    <br>
+
+    <p>Con los números de punto flotante se pueden realizar las mismas operaciones que con los números enteros.</p>
+
+    <br>
+
+    <p>
+        Una característica importante de los "Float" es que pueden representar números muy grandes y muy pequeños gracias 
+        a la notación científica:
+    </p>
+    <p>
+        <span id="var">grande</span> = <span id="num">1.2e10</span>: Equivale a <span id="num">1.2</span> * 
+        <span id="num">10</span> ** <span id="num">10</span>
+    </p>
+    <p>
+        <span id="var">pequeño</span> = <span id="num">1.2e-10</span>: Equivale a <span id="num">1.2</span> * 
+        <span id="num">10</span> ** <span id="num">-10</span>
+    </p>
+
+    <br>
+
+    <p>
+        Al igual que con los dátos "Int", Python reconoce los datos de tipo "Float".
+    </p>
+
+    <br>
+
+    <h3>DATOS COMPLEJOS (COMPLEX)</h3>
+    <p>
+        Los datos complejos representan números complejos, que tienen una parte real y una parte imaginaria. Estos son 
+        útiles en aplicaciones científicas y matemáticas donde se requieren cálculos con números complejos.
+    </p>
+    <p>
+        Un número complejo se define en Python con la forma <span>a + bj</span>, donde <span>a</span> es la parte real 
+        y <span>b</span> es la parte imaginaria.
+    </p>
+    <p>Ejemplo de datos complejos:</p>
+    <p><span id="var">x</span> = <span id="num">3</span> + <span id="num">4j</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span>.<span id="var">real</span><span id="parentesis">)</span> 
+        Imprime la parte real: 3.0
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">x</span>.<span id="var">imag</span><span id="parentesis">)</span> 
+        Imprime la parte imaginaria: 4.0
+    </p>
+    <p>
+        Puedes realizar operaciones aritméticas con números complejos de manera similar a como lo harías con números 
+        enteros o flotantes:
+    </p>
+    <p><span id="var">a</span> = <span id="num">1</span> + <span id="num">2j</span></p>
+    <p><span id="var">b</span> = <span id="num">3</span> + <span id="num">4j</span></p>
+    <p><span id="var">suma</span> = <span id="var">a</span> + <span id="var">b</span> Resultado: (4+6j)</p>
+    <p><span id="var">resta</span> = <span id="var">a</span> - <span id="var">b</span> Resultado: (-2-2j)</p>
+    <p><span id="var">multiplicacion</span> = <span id="var">a</span> * <span id="var">b</span> Resultado: (-5+10j)</p>
+    <p><span id="var">division</span> = <span id="var">a</span> / <span id="var">b</span> Resultado: (0.44+0.08j)</p>
+    <p>
+        Los números complejos son especialmente útiles en el análisis de señales, la física, y en la resolución de 
+        ecuaciones polinómicas y diferenciales.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS SECUENCIALES</h2>
+
+    <br>
+
+    <h3>LIST (LISTAS)</h3>
+    <p>
+        Las listas en Python son colecciones ordenadas de elementos que pueden ser de diferentes tipos, incluso mezclando 
+        enteros, cadenas, y más. Son muy versátiles y se utilizan para almacenar una secuencia de elementos.
+    </p>
+    <p>Ejemplo de listas:</p>
+    <p>
+        <span id="var">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="txt">"hola"</span>, 
+        <span id="num">3.14</span>, <span id="tipo-dato">True</span><span id="parentesis">]</span>
+    </p>
+
+    <br>
+
+    <p>Puedes acceder a los elementos de una lista mediante su índice:</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">lista</span><span id="parentesis">[</span><span id="num">1</span><span id="parentesis">]</span><span id="parentesis">)</span>
+        Imprime <span id="txt">"hola"</span>
+    </p>
+
+    <br>
+
+    <p>
+        Es importante decir que, al momento de llamar un elemento de una lista mediante su índice, los valores 
+        inician en 0. Es decir que: la posición 0 es el primer elemento de la lista, la posición 1 es el segundo 
+        elemento de la lista, etc.
+    </p>
+
+    <br>
+
+    <p>Y las listas tienen una gran cantidad de métodos útiles. Algunos de los más comunes son:</p>
+    <p>Añadir un elemento al final de la lista:</p>
+    <p>
+        <span id="var">lista</span>.<span id="metodo">append</span><span id="parentesis">(</span><span id="txt">"nuevo"</span><span id="parentesis">)</span>
+        Añade la palabra <span id="txt">"nuevo"</span> al final de la lista; la lista quedaría así: <span id="var">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="txt">"hola"</span>, 
+        <span id="num">3.14</span>, <span id="tipo-dato">True</span>, <span id="txt">"nuevo"</span><span id="parentesis">]</span>
+    </p>
+
+    <br>
+
+    <p>Eliminar un elemento específico:</p>
+    <p>
+        <span id="var">lista</span>.<span id="metodo">remove</span><span id="parentesis">(</span><span id="num">3.14</span><span id="parentesis">)</span>
+        Elimina el número <span id="num">3.14</span> de la lista; la lista quedaría así: <span id="var">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="txt">"hola"</span>, 
+        <span id="tipo-dato">True</span>, <span id="txt">"nuevo"</span><span id="parentesis">]</span>
+    </p>
+
+    <br>
+
+    <p>Insertar un elemento en una posición específica de la lista:</p>
+    <p>
+        <span id="var">lista</span>.<span id="metodo">insert</span><span id="parentesis">(</span><span id="num">2</span>, 
+        <span id="txt">"insertado"</span><span id="parentesis">)</span> Inserta el texto <span id="txt">"insertado"</span> 
+        en la posición #2; la lista quedaría así: <span id="var">lista</span> = <span id="parentesis">[</span>
+        <span id="num">1</span>, <span id="txt">"hola"</span>, <span id="txt">"insertado"</span>, <span id="tipo-dato">True</span>, 
+        <span id="txt">"nuevo"</span><span id="parentesis">]</span>
+    </p>
+
+    <br>
+
+    <h3>TUPLE (TUPLAS)</h3>
+    <p>
+        Las tuplas en Python son como las listas, pero inmutables. Una vez que las creas, no puedes cambiar sus 
+        elementos. Esto las hace más seguras y rápidas para ciertas operaciones. La principal diferencia entre una 
+        lista y una tupla es que para crear una lista, usamos corchetes cuadrados "[ ]", para crear una tupla usamos 
+        parentesis "( )".
+    </p>
+    <p>Ejemplo de una tupla:</p>
+    <p>
+        <span id="var">tupla</span> = <span id="parentesis">(</span><span id="num">1</span>, <span id="txt">"hola"</span>, 
+        <span id="num">3.14</span>, <span id="tipo-dato">True</span><span id="parentesis">)</span>
+    </p>
+
+    <br>
+
+    <p>
+        En una tupla accedes a los elementos de la misma forma que en una lista:
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">tupla</span><span id="parentesis">[</span><span id="num">1</span><span id="parentesis">]</span><span id="parentesis">)</span>
+        Imprime <span id="txt">"hola"</span>
+    </p>
+
+    <br>
+
+    <p>Pero no puedes modificarla, Python arrojará un "TypeError":</p>
+    <p>
+        <span id="var">tupla</span><span id="parentesis">[</span><span id="num">1</span><span id="parentesis">]</span> 
+        = <span id="txt">"adiós"</span> Resultado: <span>TypeError: 'tuple' object does not support item assignment</span>
+    </p>
+
+    <br>
+
+    <p>
+        Las tuplas son perfectas para almacenar datos que no deben cambiar a lo largo del tiempo, como coordenadas 
+        (x, y), fechas (año, mes, día), etc. Son útiles en situaciones donde quieres asegurar que los datos no se 
+        modifiquen accidentalmente.
+    </p>
+
+    <br>
+
+    <h3>RANGO (RANGE)</h3>
+    <p>
+        los datos tipo "range" representan una secuencia de números y son comúnmente usados en bucles para iterar 
+        (repetirse) una cantidad específica de veces. Es muy eficiente y no almacena cada número en memoria, sino que 
+        los genera a medida que se necesitan.
+    </p>
+    <p>
+        Para ejemplificar esto, usaremos un ciclo "for", para ver más acerca de estos ciclos, visitar: 
+        <a href="ciclos en python.html">Ciclos en Python</a>, en el apartado de "Ciclos For".
+    </p>
+    <p><span id="var">num</span> = <span id="num">0</span></p>
+    <p>
+        <span id="for">for</span> <span id="var">num</span> <span id="in">in</span> <span id="range">range</span><span id="parentesis">(</span><span id="num">5</span><span id="parentesis">)</span>:
+    </p>
+    <p id="sangria"><span id="var">num</span> += <span id="num">1</span></p>
+    <p id="sangria"><span id="print">print</span><span id="parentesis">(</span><span id="var">num</span><span id="parentesis">)</span></p>
+    <p>
+        Lo anterior va a imprimir los numeros del uno al cinco.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS DE MAPEO</h2>
+
+    <br>
+
+    <h3>DICT (DICCIONARIOS)</h3>
+    <p>
+        Los datos "Dict", o diccionarios, en Python son colecciones desordenadas de pares "clave" - "valor" 
+        (<span id="txt">"key"</span> - <span id="txt">"value"</span>). Esto significa que cada elemento en el 
+        diccionario tiene una clave única asociada a un valor, lo cual sirve para buscar valores rápidamente sin 
+        necesidad de recorrer toda una lista.
+    </p>
+
+    <p>Ejemplo de un diccionario:</p>
+    <p><span id="var">diccionario</span> = <span id="parentesis">{</span></p>
+    <p id="sangria"><span id="txt">"nombre"</span>: <span id="txt">"Juan"</span>,</p>
+    <p id="sangria"><span id="txt">"edad"</span>: <span id="num">15</span>,</p>
+    <p id="sangria"><span id="txt">"mayor_de_edad"</span>: <span id="tipo-dato">False</span></p>
+    <p><span id="parentesis">}</span></p>
+
+    <br>
+
+    <p>Para acceder a los valores, simplemente usas las claves:</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">diccionario</span><span id="parentesis">[</span><span id="txt">"nombre"</span><span id="parentesis">]</span><span id="parentesis">)</span> 
+        Imprime: <span id="txt">"Juan"</span>
+    </p>
+
+    <br>
+
+    <p>Puedes agregar, modificar y eliminar elementos de un diccionario:</p>
+    <p>
+        <span id="var">diccionario</span><span id="parentesis">[</span><span id="txt">"carro"</span><span id="parentesis">]</span> = <span id="txt">"Toyota"</span> 
+        Añade un nuevo par <span id="txt">"key"</span>:<span id="txt">"value"</span>.
+    </p>
+    <p>
+        <span id="var">diccionario</span><span id="parentesis">[</span><span id="txt">"edad"</span><span id="parentesis">]</span> = <span id="num">18</span> 
+        Modifica el valor de la clave <span id="txt">"edad"</span>; pasa de ser 15 a 18.
+    </p>
+    <p>
+        <span id="del">del</span> <span id="var">diccionario</span><span id="parentesis">[</span><span id="txt">"nombre"</span><span id="parentesis">]</span> 
+        Elimina el par <span id="txt">"nombre"</span>:<span id="txt">"Juan"</span>
+    </p>
+
+    <br>
+
+    <p>
+        Los diccionarios son útiles para almacenar y manejar datos estructurados y se usan en una variedad de 
+        aplicaciones, desde bases de datos hasta el procesamiento de datos.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>CONJUNTOS</h2>
+
+    <br>
+
+    <h3>SET</h3>
+    <p>
+        Los datos "Set" en Python son colecciones desordenadas de elementos únicos, lo que significa que no puedes 
+        tener elementos repetidos en un set. Esto los hace útiles para eliminar duplicados y realizar operaciones 
+        matemáticas como la unión y la intersección.
+    </p>
+    <p>Para crear un set, necesitas usar llaves "{ }"</p>
+    <p>Ejemplo de un set:</p>
+    <p>
+        <span id="var">set</span> = <span id="parentesis">{</span><span id="num">1</span>, <span id="num">2</span>, 
+        <span id="num">3</span>, <span id="num">4</span>, <span id="num">5</span>, <span id="num">5</span><span id="parentesis">}</span> 
+        Recuerda que un set elimina los elementos duplicados, por consiguiente, el número 5 que está duplicado, se 
+        elimina. El resultado sería: <span id="num">1</span>, <span id="num">2</span>, <span id="num">3</span>, 
+        <span id="num">4</span>, <span id="num">5</span>.
+    </p>
+
+    <br>
+
+    <p>
+        Al igual que con las listas y diccionarios, con los set se pueden utilizar diferentes métodos, cómo añadir o 
+        eliminar elementos:
+    </p>
+    <p>
+        <span id="var">set</span>.<span id="metodo">add</span><span id="parentesis">(</span><span id="num">6</span><span id="parentesis">)</span> 
+        Agrega el número 6 al set.
+    </p>
+    <p>
+        <span id="var">set</span>.<span id="metodo">remove</span><span id="parentesis">(</span><span id="num">3</span><span id="parentesis">)</span> 
+        Elimina el número 3 del set.
+    </p>
+
+    <br>
+    
+    <p>Puedes realizar operaciones con otros sets:</p>
+    <p>
+        <span id="var">otro_set</span> = <span id="parentesis">{</span><span id="num">4</span>, <span id="num">5</span>, 
+        <span id="num">6</span>, <span id="num">7</span><span id="parentesis">}</span>
+    </p>
+    <p>
+        <span id="var">union</span> = <span id="var">set</span> | <span id="var">otro_set</span> Combina todos los 
+        elementos de los dos sets, eliminando duplicados. Resultado: <span id="parentesis">{</span><span id="num">1</span>, 
+        <span id="num">2</span>, <span id="num">3</span>, <span id="num">4</span>, <span id="num">5</span>, <span id="num">6</span>, 
+        <span id="num">7</span><span id="parentesis">}</span>
+    </p>
+    <p>
+        <span id="var">interseccion</span> = <span id="var">set</span> & <span id="var">otro_set</span> Encuentra los 
+        elementos comunes entre dos sets. Resultado: <span id="parentesis">{</span><span id="num">4</span>, 
+        <span id="num">5</span><span id="parentesis">}</span>
+    </p>
+
+    <br>
+
+    <h3>FROZENSET</h3>
+
+    <p>
+        Los frozenset en Python son similares a los set, pero a diferencia de estos, los frozenset son inmutables. 
+        Esto significa que, una vez creado, no puedes cambiar su contenido.
+    </p>
+    <p>Ejemplo de un frozenset:</p>
+    <p>
+        <span id="var">mi_frozenset</span> = <span id="tipo-dato">frozenset</span><span id="parentesis">(</span><span id="parentesis">[</span><span id="num">1</span>, 
+        <span id="num">2</span>, <span id="num">3</span>, <span id="num">4</span><span id="parentesis">]</span><span id="parentesis">)</span>
+    </p>
+    <p><span id="print">print</span><span id="parentesis">(</span><span id="var">mi_frozenset</span><span id="parentesis">)</span></p>
+    <p>Esto imprime: <span>frozenset({1, 2, 3, 4})</span></p>
+
+    <br>
+
+    <p>
+        Como los sets, los frozenset eliminan duplicados automáticamente. Puedes hacer operaciones típicas de 
+        conjuntos con ellos, como la unión, intersección y diferencia:
+    </p>
+    <p>
+        <span id="var">fs1</span> = <span id="tipo-dato">frozenset</span><span id="parentesis">(</span><span id="parentesis">[</span><span id="num">1</span>, 
+        <span id="num">2</span>, <span id="num">3</span><span id="parentesis">]</span><span id="parentesis">)</span>
+    </p>
+    <p>
+        <span id="var">fs2</span> = <span id="tipo-dato">frozenset</span><span id="parentesis">(</span><span id="parentesis">[</span><span id="num">3</span>, 
+        <span id="num">4</span>, <span id="num">5</span><span id="parentesis">]</span><span id="parentesis">)</span>
+    </p>
+
+    <br>
+
+    <p>Unión: </p>
+    <p><span id="var">union</span> = <span id="var">fs1</span> | <span id="var">fs2</span></p>
+    <p>Resultado: <span>frozenset({1, 2, 3, 4, 5})</span></p>
+
+    <br>
+
+    <p>Intersección: </p>
+    <p><span id="var">interseccion</span> = <span id="var">fs1</span> & <span id="var">fs2</span></p>
+    <p>Resultado: <span>frozenset({3})</span></p>
+
+    <br>
+
+    <p>Diferencia: </p>
+    <p><span id="var">union</span> = <span id="var">fs1</span> - <span id="var">fs2</span></p>
+    <p>Resultado: <span>frozenset({1, 2})</span></p>
+
+    <br>
+
+    <p>
+        Los frozenset son ideales cuando necesitas garantizar la inmutabilidad y la integridad de los datos en tus 
+        conjuntos.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS BOOLEANOS</h2>
+
+    <br>
+
+    <h3>BOOL (BOOLEANOS)</h3>
+    <p>
+        Los datos "Bool" en Python representan valores booleanos y pueden ser sólo uno de dos valores: 
+        "<span id="tipo-dato">True</span>" o "<span id="tipo-dato">False</span>". Son especialmente útiles en condiciones y bucles.
+    </p>
+    <p>Ejemplo de variables booleanas:</p>
+    <p><span id="var">es_mayor</span> = <span id="tipo-dato">True</span></p>
+    <p><span id="var">es_menor</span> = <span id="tipo-dato">False</span></p>
+
+    <br>
+
+    <p>Las variables booleanas se usan comúnmente en declaraciones condicionales:</p>
+    <p><span id="if">if</span> <span id="num">5</span> > <span id="num">2</span>:</p>
+    <p id="sangria"><span id="print">print</span><span id="parentesis">(</span><span id="tipo-dato">True</span><span id="parentesis">)</span></p>
+    <p><span id="if">else</span>:</p>
+    <p id="sangria"><span id="print">print</span><span id="parentesis">(</span><span id="tipo-dato">False</span><span id="parentesis">)</span></p>
+    
+    <br>
+
+    <p>También son el resultado de operaciones comparativas:</p>
+    <p><span id="var">a</span> = <span id="num">10</span></p>
+    <p><span id="var">b</span> = <span id="num">5</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> > <span id="var">b</span><span id="parentesis">)</span>
+        Imprime <span id="tipo-dato">True</span>
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">a</span> == <span id="var">b</span><span id="parentesis">)</span>
+        Imprime <span id="tipo-dato">False</span>
+    </p>
+
+    <br>
+
+    <p>Los booleanos son fundamentales para controlar el flujo del programa.</p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS BINARIOS</h2>
+
+    <br>
+
+    <h3>BYTES</h3>
+
+    <p>
+        Los datos <span id="tipo-dato">bytes</span> representan secuencias de bytes, que son esencialmente cadenas de caracteres inmutables 
+        compuestas por valores enteros en el rango de 0 a 255. Son útiles para manejar datos binarios como 
+        archivos, imágenes y cualquier tipo de datos que no sean directamente texto.
+    </p>
+
+    <p>Ejemplo de una cadena de bytes: </p>
+    <p><span id="var">data</span> = <span id="txt">b"Hola, mundo"</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> 
+        Imprime: <span>b'Hola, mundo'</span>
+    </p>
+
+    <br>
+
+    <p>Puedes acceder a los elementos de la misma manera que con una cadena o una lista:</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">[</span><span id="num">0</span><span id="parentesis">]</span><span id="parentesis">)</span> 
+        Imprime 72, que es el valor ASCII de 'H'
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">[</span><span id="num">1</span>:<span id="num">5</span><span id="parentesis">]</span><span id="parentesis">)</span> 
+        Imprime: <span>b'ola,'</span>.
+    </p>
+
+    <br>
+
+    <p>
+        Es importante recordar que las cadenas bytes son inmutables, lo que significa que no puedes cambiar sus 
+        elementos directamente. Si necesitas modificar una cadena de bytes, debes convertirla primero en una lista 
+        de bytes , que es mutable.
+    </p>
+
+    <br>
+
+    <h3>BYTEARRAY</h3>
+
+    <p>
+        Los datos bytearray son muy similares a los bytes, pero con una diferencia clave: son mutables. Esto 
+        significa que puedes modificar sus elementos después de haberlos creado, lo que los hace extremadamente 
+        útiles para la manipulación de datos binarios en aplicaciones donde necesitas cambiar los datos 
+        directamente.
+    </p>
+
+    <p>Crear un bytearray a partir de una cadena de bytes: </p>
+    <p><span id="var">data</span> = <span id="tipo-dato">bytearray</span><span id="parentesis">(</span><span id="txt">b"Hola, mundo"</span><span id="parentesis">)</span></p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> 
+        Imprime <span>bytearray(b'Hola, mundo')</span>.
+    </p>
+
+    <br>
+
+    <p>Puedes modificar elementos individuales del bytearray:</p>
+
+    <p>
+        <span id="var">data</span><span id="parentesis">[</span><span id="num">0</span><span id="parentesis">]</span> 
+        = <span id="num">74</span> Cambia 'H' (72) por 'J' (74)
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> 
+        Imprime <span>bytearray(b'Jola, mundo')</span>
+    </p>
+
+    <br>
+
+    <p>También puedes usar métodos para modificar el contenido de un bytearray:</p>
+    <p>
+        <span id="var">data</span>.<span id="metodo">append</span><span id="parentesis">(</span><span id="num">33</span><span id="parentesis">)</span> 
+        Añade el byte correspondiente al carácter '!'
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> 
+        Imprime <span>bytearray(b'Jola, mundo!')</span>
+    </p>
+
+    <br>
+
+    <p>Eliminar elementos:</p>
+    <p>
+        <span id="del">del</span> <span id="var">data</span><span id="parentesis">[</span><span id="num">1</span>:<span id="num">5</span><span id="parentesis">]</span> 
+        Elimina los bytes correspondientes a "ola,".
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> 
+        Imprime <span>bytearray(b'J mundo!')</span>.
+    </p>
+
+    <br>
+
+    <p>
+        El <span id="tipo-dato">bytearray</span> es muy útil en situaciones donde necesitas trabajar con grandes cantidades de datos binarios y requieres eficiencia y flexibilidad en la manipulación de esos datos. Se utiliza frecuentemente en operaciones de E/S de archivos, procesamiento de datos de red, y en aplicaciones multimedia como imágenes y audio.
+    </p>
+
+    <br>
+
+    <h3>MEMORYVIEW</h3>
+
+    <p>
+        Los datos <span id="tipo-dato">memoryview</span> en Python permiten acceder a los datos subyacentes de un objeto de bytes sin copiar los datos reales. Son útiles para trabajar con grandes cantidades de datos binarios porque puedes manipularlos sin necesidad de duplicar la memoria, lo que ahorra tiempo y espacio.
+    </p>
+
+    <p>Ejemplo para un memoryview: </p>
+    <p>
+        <span id="var">data</span> = <span id="tipo-dato">bytearray</span><span id="parentesis">(</span><span id="txt">b"Hola, mundo"</span><span id="parentesis">)</span> Se crea un bytearray
+    </p>
+    <p>
+        <span id="var">mem_view</span> = <span id="tipo-dato">memoryview</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> Se crea un objeto memoryview
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">mem_view</span><span id="parentesis">[</span><span id="num">1</span>:<span id="num">5</span><span id="parentesis">]</span><span id="parentesis">)</span> Imprime <span>b'ola,'</span>
+    </p>
+    <p>Modificar el contenido a través del memoryview: </p>
+    <p>
+        <span id="var">mem_view</span><span id="parentesis">[</span><span id="num">0</span><span id="parentesis">]</span> = <span id="num">74</span> Cambia 'H' (72) por 'J' (74)
+    </p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="var">data</span><span id="parentesis">)</span> Imprime <span>bytearray(b'Jola, mundo')</span>
+    </p>
+
+    <br>
+
+    <p>
+        El <span id="tipo-dato">memoryview</span> permite trabajar directamente con los datos en memoria sin la sobrecarga de crear copias. Puedes acceder a partes del objeto, modificarlo, y realizar operaciones de manera eficiente.
+    </p>
+
+    <p>
+        Los <span id="tipo-dato">memoryview</span> son especialmente útiles en aplicaciones de alto rendimiento donde la gestión eficiente de la memoria es crucial, como en el procesamiento de grandes volúmenes de datos binarios en redes, archivos, o gráficos.
+
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>DATOS SIN TIPO</h2>
+
+    <br>
+
+    <h3>NoneType</h3>
+
+    <p>
+        NoneType es el tipo de dato que se asocia con el valor especial <span id="tipo-dato">None</span> en Python. <span id="tipo-dato">None</span> se utiliza para representar la ausencia de un valor, o "nada". Es especialmente útil en funciones que no devuelven un valor significativo, o para inicializar variables a un estado vacío o nulo.
+    </p>
+    <p>Ejemplo basico de <span id="tipo-dato">None</span></p>
+    <p><span id="var">var</span> = <span id="tipo-dato">None</span></p>
+
+    <br>
+
+    <p>
+        Puedes verificar si una variable es <span id="tipo-dato">None</span> usando el operador <span id="id-oper">is</span>:
+    </p>
+    <p>
+        <span id="if">if</span> <span id="var">var</span> <span id="id-oper">is</span> <span id="tipo-dato">None</span>: 
+    </p>
+    <p id="sangria"><span id="print">print</span><span id="parentesis">(</span><span id="txt">"La variable no tiene valor asignado."</span><span id="parentesis">)</span></p>
+
+    <br>
+
+    <p>
+        NoneType es útil para distinguir entre valores que están explícitamente establecidos a un estado vacío y aquellos que realmente contienen datos. Es una herramienta fundamental para manejar estados y flujos de control en tus programas.
+    </p>
+
+    <hr style="border: 2px solid white;">
+    
+    <h2>EVALÚA TU APRENDIZAJE:</h2>
+    <p>Para averiguar cuanto aprendiste en la lección, haz click en el siguiente botón:</p>
+    <button id="quiz" onclick="window.location.href='Quizzes/quiz de tipos de datos en python.html'">¡EVALÚA TU APRENDIZAJE!</button><br>
+</body>
+</html>

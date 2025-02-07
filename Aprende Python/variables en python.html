@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodingDude">
+    <link rel="shortcut icon" href="python.png">
+    <title>VARIABLES</title>
+</head>
+
+<body>
+    <h1>VARIABLES</h1>
+    <p>
+        Las variables de Python son nombres que se refieren a valores almacenados en la memoria. Se pueden asignar usando el signo igual (=), como <span><span id="var">x</span> = <span id="num">10</span></span> . Las variables de Python no tienen un tipo fijo, lo que significa que pueden almacenar diferentes tipos de valores en diferentes momentos. Por ejemplo, <span id="var">x</span> se puede asignar a un valor de cadena más adelante, como <span><span id="var">x</span> = <span id="txt">"Hola"</span></span>. Para acceder al valor de una variable, simplemente use su nombre en una expresión o declaración.
+    </p>
+
+    <br>
+
+    <p>
+        <b>Declaración y asignación:</b> En Python, no necesitas declarar el tipo de variable explícitamente, simplemente asignas un valor a un nombre de variable y Python se encarga del resto. Para declarar una variable en Python, simplemente escriba el nombre de la variable seguido de un signo igual y el valor que desea asignar. Por ejemplo, <span><span id="var">x</span> = <span id="num">10</span></span> declara una variable llamada <span id="var">x</span> y le asigna el valor <span id="num">10</span>.
+    </p>
+    <p>
+        <span><span id="var">var1</span> = <span id="num">5</span></span><br>
+        <span><span id="var">var2</span> = <span id="txt">"Hola"</span></span>
+    </p>
+
+    <br>
+
+    <p>
+        <b>Tipado dinámico:</b> Python es un lenguaje de tipado dinámico, lo que significa que el tipo de una variable puede cambiar en tiempo de ejecución. Por ejemplo, puede asignar un valor entero a una variable y luego asignar un valor de cadena a la misma variable. Python se encarga de la conversión de tipos automáticamente.
+    </p>
+    <p>
+        <span><span id="var">var</span> = <span id="num">10</span></span><br>
+        <span><span id="var">var</span> = <span id="txt">"Hola"</span></span>
+    </p>
+
+    <br>
+
+    <p>
+        <b>Nombres de variables:</b> Los nombres de variables pueden contener letras, números y guiones bajos, pero no pueden empezar con un número. Además, son sensibles a mayúsculas y minúsculas.
+    </p>
+    <p>
+        <span><span id="var">var</span> = <spaan id="num">10</spaan></span><br>
+        <span><span id="var">Var</span> = <spaan id="num">20</spaan></span> Esto es diferente a la variable anterior.
+    </p>
+
+    <br>
+
+    <p>
+        <b>Tipos de datos comúnes:</b> Algunas de las variables más comunes en Python incluyen enteros (<span id="tipo-dato">int</span>), cadenas (<span id="tipo-dato">str</span>), listas (<span id="tipo-dato">list</span>), tuplas (<span id="tipo-dato">tuple</span>), diccionarios (<span id="tipo-dato">dict</span>), y más.
+    </p>
+    <p>
+        <span><span id="var">entero</span> = <spaan id="num">10</spaan></span><br>
+        <span><span id="var">cadena</span> = <spaan id="txt">"Hola, Mundo"</span></span><br>
+        <span><span id="var">lista</span> = <span id="parentesis">[</span><span id="num">1</span>, <span id="num">2</span>, <span id="num">3</span>, <span id="num">4</span><span id="parentesis">]</span></span><br>
+        <span><span id="var">tupla</span> = <span id="parentesis">(</span><span id="num">1</span>, <span id="num">2</span>, <span id="num">3</span>, <span id="num">4</span><span id="parentesis">)</span></span><br>
+        <span><span id="var">diccionario</span> = <span id="parentesis">{</span><span id="txt">"clave"</span>:<span id="txt">"valor"</span><span id="parentesis">}</span></span>
+    </p>
+
+    <br>
+
+    <p>
+        <b>Variable de Alcance:</b> El alcance de una variable determina dónde puede ser usada. En Python, las variables pueden ser locales (dentro de una función) o globales (en todo el código). Si una variable se declara dentro de una función, solo puede ser usada dentro de esa función. Si se declara fuera de una función, puede ser usada en cualquier lugar del código.
+    </p>
+    <p>
+        <span><span id="var">variableGlobal</span> = <span id="txt">"¡Soy global!"</span></span><br><br>
+        <span><span id="def">def</span> <span id="funcion">miFuncion</span><span id="parentesis">()</span>:</span><br>
+        <span id="sangria"><span id="var">variableLocal</span> = <span id="txt">"¡Soy local!"</span></span>
+    </p>
+    <p>
+        Si intentas acceder a la variable local fuera de la función, obtendrás un error. Si intentas acceder a la variable global dentro de la función, Python buscará la variable en el ámbito local primero. Si no la encuentra, buscará en el ámbito global.
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>EVALÚA TU APRENDIZAJE:</h2>
+    <p>Para averiguar cuanto aprendiste en la lección, haz click en el siguiente botón:</p>
+    <button id="quiz" onclick="window.location.href='Quizzes/quiz de variables en python.html'">¡EVALÚA TU APRENDIZAJE!</button><br>
+
+    <link rel="stylesheet" href="variables en python.css">
+</body>
+</html>

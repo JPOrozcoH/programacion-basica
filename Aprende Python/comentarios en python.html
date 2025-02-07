@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CodingDude">
+    <link rel="shortcut icon" href="python.png">
+    <title>COMENTARIOS</title>
+</head>
+
+<body>
+    <h1>COMENTARIOS</h1>
+
+    <h2>USO DE LOS COMENTARIOS EN PYTHON</h2>
+    <p>- Los comentarios se pueden utilizar para explicar el código Python.</p>
+    <p>- Se pueden utilizar comentarios para hacer que el código sea más legible.</p>
+    <p>- Los comentarios se pueden utilizar para evitar la ejecución al probar el código.</p>
+
+    <br>
+
+    <h2>COLOCAR COMENTARIOS</h2>
+    <p>Python tiene dos tipos de comentarios: los de una sola línea y los de múltiples líneas.</p>
+    <p>
+        Para crear un comentario de una sola línea, se inicia con el símbolo de numeral (#). Lo que siga despúes de
+        ese símbolo (mientras continúe en la misma línea) no será ejecutado con el resto del código.
+    </p>
+    <span id="comentario">#Esto es un comentario de una sola línea</span>
+    <p><span id="print">print</span><span id="parentesis">(</span><span id="txt">"Hola mundo"</span><span id="parentesis">)</span></p>
+    <p>En ese ejemplo, al ejecutar el código, solo será visible el "Hola Mundo".</p>
+
+    <br>
+
+    <p>Los comentarios también se pueden colocar al finalizar una línea, y Python los va a ignorar.</p>
+    <p>
+        <span id="print">print</span><span id="parentesis">(</span><span id="txt">"Hola mundo"</span><span id="parentesis">)</span> 
+        <span id="comentario">#Esto es un comentario</span>
+    </p>
+
+    <br>
+
+    <p>
+        Un comentario no necesariamente explica código, también puede evitar que ciertas líneas se ejecuten al correr
+        el código.
+    </p>
+    <span id="comentario">#print("Hola Mundo")</span>
+    <p><span id="print">print</span><span id="parentesis">(</span><span id="txt">"Hola"</span><span id="parentesis">)</span></p>
+
+    <br>
+
+    <p>
+        Python no tiene una sintaxis especial para los comentarios de múltiples líneas, lo que se 
+        puede hacer es cologar el símbolo # en las líneas que se necesiten.
+    </p>
+    <p><span id="comentario">#Esto es</span></p>
+    <p><span id="comentario">#un comentario</span></p>
+    <p><span id="comentario">#de varias</span></p>
+    <p><span id="comentario">#líneas</span></p>
+
+    <br>
+
+    <p>
+        También se puede utilizar una cadena de varias líneas; dado que Python ignorará los caracteres de cadena que 
+        no estén asignados a una variable, puedes agregar una cadena multilínea (comillas triples) en tu código y 
+        colocar tu comentario dentro de ella:
+    </p>
+    <p><span id="comentario">'''</span></p>
+    <p><span id="comentario">Esto es</span></p>
+    <p><span id="comentario">un comentario</span></p>
+    <p><span id="comentario">de varias</span></p>
+    <p><span id="comentario">líneas.</span></p>
+    <p><span id="comentario">'''</span></p>
+
+    <p>
+        En los comentarios hechos con cadenas multilieas no solo funcionan con comillas simples (<span id="comentario">''' '''</span>), 
+        también funcionan con comillas dobles (<span id="comentario">""" """</span>).
+    </p>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>CONCLUSIÓN: </h2>
+    <p>
+        Un comentario es un apartado del código que no sera ejecutado al correr el código. Puede servir
+        para explicar diferentes líneas de código, para hacerlo más legible o para evitar que determinadas partes
+        del código se ejecuten. Los comentarios en Python pueden ser de una sola línea o de múltiples líneas.
+    </p>
+
+    <br>
+
+    <h2>EVALÚA TU APRENDIZAJE:</h2>
+    <p>Para averiguar cuanto aprendiste en la lección, haz click en el siguiente botón:</p>
+    <button id="quiz" onclick="window.location.href='Quizzes/quiz de comentarios en python.html'">¡EVALÚA TU APRENDIZAJE!</button><br>
+
+    <link rel="stylesheet" href="comentarios en python.css">
+</body>
+</html>
