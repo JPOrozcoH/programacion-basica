@@ -200,6 +200,10 @@
               } else {
                   quiz.innerHTML = `
                       <h2>Respondiste ${score}/${quizData.length} preguntas correctamente</h2>
+                      <div style="display: flex; justify-content: space-between;">
+                          <button onclick="location.href='../aprende python.html'">Volver al menú</button>
+                          <button onclick="location.href='../comentarios en python.html'">Volver a la lección</button>
+                      </div>
                       <button onclick="location.reload()">Volver a intentar</button>
                   `
               }
