@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NÚMEROS</title>
+    <link rel="stylesheet" href="numeros en python.css">
+</head>
+<body>
+    <h1>NÚMEROS</h1>
+
+
+    <p>En Python, los datos numéricos se dividen principalmente en tres tipos: enteros (<code id="tipo-dato">int</code>), números de punto flotante (<code id="tipo-dato">float</code>) y números complejos (<code id="tipo-dato">complex</code>).</p>
+
+    <br>
+
+    <h2>NÚMEROS ENTEROS (<code id="tipo-dato">int</code>)</h2>
+
+    <p>&bull; Representan números enteros, ya sean positivos o negativos, sin decimales. Algunos ejemplos de números enteros pueden ser: <code id="num">-5</code>, <code id="num">0</code>, <code id="num">100</code>.</p>
+
+    <p>Para declarar un número entero, simplemente escribimos el número sin decimales. Por ejemplo: </p>
+
+    <!-- Contenedor principal del bloque de código -->
+    <div class="code-block">
+        <!-- Barra superior con el lenguaje y botón de copiar -->
+        <div class="code-header">
+            <span class="language">Python</span>
+            <button class="copy-button" data-block-id="1">
+                <span class="copy-icon">📋</span>
+                Copiar
+            </button>
+        </div>
+        
+        <!-- El código en sí -->
+        <pre class="code-content" id="code-block-1"><code>a = <span id="num">-5</span>
+b = <span id="num">0</span>
+c = <span id="num">100</span></code></pre>
+    </div>
+
+    <br>
+
+    <h2>NÚMEROS DE PUNTO FLOTANTE (<code id="tipo-dato">float</code>)</h2>
+
+    <p>&bull; Representan números con parte decimal, también conocidos como números de punto flotante. Algunos ejemplos de numeros de punto flotante son: <code id="num">3.14</code>, <code id="num">-0.001</code>, <code id="num">2.71828</code>.</p>
+
+    <p>Declaración de números de punto flotante:</p>
+
+    <!-- Contenedor principal del bloque de código -->
+    <div class="code-block">
+        <!-- Barra superior con el lenguaje y botón de copiar -->
+        <div class="code-header">
+            <span class="language">Python</span>
+            <button class="copy-button" data-block-id="2">
+                <span class="copy-icon">📋</span>
+                Copiar
+            </button>
+        </div>
+        
+        <!-- El código en sí -->
+        <pre class="code-content" id="code-block-2"><code>x = <span id="num">3.14</span>
+y = <span id="num">-0.001</span>
+z = <span id="num">2.71828</span></code></pre>
+    </div>
+
+    <br>
+
+    <h2>NÚMEROS COMPLEJOS (<code id="tipo-dato">complex</code>)</h2>
+
+    <p>&bull; Representan números complejos, que tienen una parte real y una parte imaginaria.</p>
+    <p>&bull; Se escriben en la forma <code>a + bj</code>, donde <code>a</code> es la parte real y <code>b</code> es la parte imaginaria.</p>
+
+    <p>Algunos ejemplos de números complejos son: <code id="num">3 + 4j</code>, <code id="num">-2 - 6j</code>, <code id="num">0 + 1j</code>.</p>
+
+    <p>Declaración de números complejos:</p>
+
+    <!-- Contenedor principal del bloque de código -->
+    <div class="code-block">
+        <!-- Barra superior con el lenguaje y botón de copiar -->
+        <div class="code-header">
+            <span class="language">Python</span>
+            <button class="copy-button" data-block-id="3">
+                <span class="copy-icon">📋</span>
+                Copiar
+            </button>
+        </div>
+        
+        <!-- El código en sí -->
+        <pre class="code-content" id="code-block-3"><code>m = <span id="num">3 + 4j</span>
+p = <span id="num">-2 - 6j</span>
+q = <span id="num">0 + 1j</span></code></pre>
+    </div>
+
+    <br>
+
+    <p>Estos tipos de datos numéricos son fundamentales para realizar operaciones matemáticas y cálculos en Python. Aquí hay algunos ejemplos de operaciones básicas con estos tres tipos de datos:</p>
+
+    <!-- Contenedor principal del bloque de código -->
+    <div class="code-block">
+        <!-- Barra superior con el lenguaje y botón de copiar -->
+        <div class="code-header">
+            <span class="language">Python</span>
+            <button class="copy-button" data-block-id="4">
+                <span class="copy-icon">📋</span>
+                Copiar
+            </button>
+        </div>
+        
+        <!-- El código en sí -->
+        <pre class="code-content" id="code-block-4"><code><span id="comentario"># Operaciones con enteros</span>
+a = <span id="num">10</span>
+b = <span id="num">3</span>
+<span id="print">print</span><span id="parentesis">(</span>a + b<span id="parentesis">)</span> <span id="comentario"># Suma: 13</span>
+<span id="print">print</span><span id="parentesis">(</span>a - b<span id="parentesis">)</span> <span id="comentario"># Resta: 7</span>
+<span id="print">print</span><span id="parentesis">(</span>a * b<span id="parentesis">)</span> <span id="comentario"># Multiplicación: 30</span>
+<span id="print">print</span><span id="parentesis">(</span>a / b<span id="parentesis">)</span> <span id="comentario"># División: 3.333...</span>
+
+<span id="comentario"># Operaciones con números de punto flotante</span>
+x = <span id="num">2.5</span>
+y = <span id="num">0.5</span>
+<span id="print">print</span><span id="parentesis">(</span>x + y<span id="parentesis">)</span> <span id="comentario"># Suma: 3.0</span>
+<span id="print">print</span><span id="parentesis">(</span>x - y<span id="parentesis">)</span> <span id="comentario"># Resta: 2.0</span>
+<span id="print">print</span><span id="parentesis">(</span>x * y<span id="parentesis">)</span> <span id="comentario"># Multiplicación: 1.25</span>
+<span id="print">print</span><span id="parentesis">(</span>x / y<span id="parentesis">)</span> <span id="comentario"># División: 5.0</span>
+
+<span id="comentario"># Operaciones con números complejos</span>
+p = <span id="num">1 + 2j</span>
+q = <span id="num">2 - 3j</span>
+<span id="print">print</span><span id="parentesis">(</span>p + q<span id="parentesis">)</span> <span id="comentario"># Suma: (3-1j)</span>
+<span id="print">print</span><span id="parentesis">(</span>p - q<span id="parentesis">)</span> <span id="comentario"># Resta: -(1+5j)</span>
+<span id="print">print</span><span id="parentesis">(</span>p * q<span id="parentesis">)</span> <span id="comentario"># Multiplicación: (8+1j)</span>
+<span id="print">print</span><span id="parentesis">(</span>p / q<span id="parentesis">)</span> <span id="comentario"># División: (-0.3076923076923077+0.5384615384615384j)</span></code></pre>
+    </div>
+
+    <hr style="border: 2px solid white;">
+
+    <h2>EVALÚA TU APRENDIZAJE:</h2>
+    <p>Para averiguar cuanto aprendiste en la lección, haz click en el siguiente botón:</p>
+    <button id="quiz" onclick="window.location.href='Quizzes/quiz de numeros en python.html'">¡EVALÚA TU APRENDIZAJE!</button><br>
+
+    <script>
+        // Seleccionar todos los botones de copiar
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Obtener el ID del bloque de código asociado
+                const blockId = this.getAttribute('data-block-id');
+                // Seleccionar el contenido del bloque específico
+                const codeBlock = document.getElementById(`code-block-${blockId}`);
+                // Copiar el texto
+                navigator.clipboard.writeText(codeBlock.textContent).then(() => {
+                    // Cambiar temporalmente el texto del botón
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<span class="copy-icon">✓</span> Copiado';
+                    
+                    // Restaurar el texto original después de 2 segundos
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
